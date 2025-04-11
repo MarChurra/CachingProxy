@@ -1,0 +1,20 @@
+{
+  "name": "cachingproxy",
+  "version": "1.0.0",
+  "description": "A proxy acting as a CDN that receives requests and caches the responses",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js --port 3000 --origin http://dummyjson.com",
+    "clear-cache": "node src/server.js --clear-cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^5.1.0",
+    "node": "^23.11.0",
+    "yargs": "^17.7.2"
+  }
+}
